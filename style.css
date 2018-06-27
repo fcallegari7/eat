@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC:400,700|Spectral:400,700');
+
+body {
+  margin: 0;
+  font-family: 'Spectral', 'Times New Roman', serif;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1rem;
+}
+
+.site-logo {
+  align-self: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 1% 5%;
+}
+
+.site-header a {
+  font-size: 1.4rem;
+}
+
+button {
+  align-self: center;
+  width: 60px;
+  padding: .2rem;
+  font-size: 1rem;
+}
+
+.menu-toggle {
+  background-color: black;
+  color: white;
+}
+
+.menu {
+  display: none
+}
+
+.show {
+  display: block;
+  padding: 1rem;
+}
+
+.menu-main ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-main ul li {
+  padding: 0;
+}
+
+.menu-main ul li a {
+  padding: 1rem;
+}
+
+.menu-secondary ul li a {
+  padding: 1rem .8rem;
+}
+
+.menu-secondary {
+  padding-top: 0;
+}
+
+.menu-secondary ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.menu-secondary ul li {
+  padding: 0 .2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 1rem;
+}
+
+.section-heading {
+  background-color: hotpink;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  padding: 1rem;
+}
+
+table caption {
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 1rem 0 1rem;
+}
+
+section div {
+  color: white;
+  background-color: rgba(0,0,0,.6);
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid rgba(255,255,255,.2);
+  margin-top: .2rem;
+}
+
+.breakfast {
+  background: url('images/breakfast.jpg') no-repeat center center fixed;
+}
+
+.lunch {
+  background: url('images/lunch.jpg') no-repeat center center fixed;
+}
+
+.dinner {
+  background: url('images/dinner.jpg') no-repeat center center fixed;
+}
+
+.staff {
+  padding: 2rem 0;
+  background: linear-gradient(black, hsl(240,35%,45%), black);
+}
+
+.staff div {
+  background: none;
+  text-align: center;
+}
+
+.staff-member-photo img {
+  max-width: 100%;
+  border-radius: 50% 50% 0 0;
+}
+
+.staff-member {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.staff-member-name {
+  position: absolute;
+  bottom: 70px;
+  left: 30%;
+  right: 30%;
+}
+
+.staff-member .staff-member-description {
+  background-color: black;
+  padding: 15px;
+}
+
+.staff-member-description {
+  font-size: .85rem;
+  max-width: 670px;
+  margin: auto;
+}
+
+.location-contact {
+  padding: 0;
+  position: relative;
+}
+
+.contact-info {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 10%;
+  color: black;
+  background-color: rgba(255,255,255,.8);
+  padding: 1rem;
+  width: 200px;
+  line-height: 2rem;
+}
+
+.contact-info {
+  color: black;
+  background-color: rgba(255,255,255,.8);
+}
+
+h2, h3{
+  font-family: 'Spectral SC', serif;
+}
+
+footer {
+  background-color: grey;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: .1rem;
+}
+
+.footer-menu ul li {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: .6rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-menu .fas {
+  display: block;
+  margin: .2rem;
+}
+
+.second {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: star;
+}
+
+.sides, .drinks {
+  background: none;
+}
+
+.contact-info div {
+  background-color: transparent;
+  color: black;
+}
+
+iframe {
+  margin-bottom: -0.5rem;
+}
+
+@media screen and (min-width: 1100px) {
+
+  header {
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  button {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-main ul {
+    flex-flow: row nowrap;
+  }
+
+   header .menu ul li a:hover {
+    background-color: hotpink;
+    color: white;
+  }
+
+  .site-logo {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .site-header a {
+    font-size: 1rem;
+  }
+
+  .menu-food {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 2.5rem;
+    align-items: center;
+  }
+
+  section {
+    padding: 4rem 3rem;
+  }
+
+  .staff {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, black, hsl(240,35%,45%), black);
+    padding: 2rem 5rem;
+  }
+
+  .staff-member {
+    margin: .5rem;
+  }
+
+  .contact-info {
+    width: 400px;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
